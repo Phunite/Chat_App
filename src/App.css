@@ -1,33 +1,63 @@
+
+/* App */
 .App {
   text-align: center;
+  background: coral;
+  height:800px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+
+/* Message */
+/* Chat containers */
+
+
+/* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Clear floats */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style images */
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style the right image */
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
 }
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
+}
+
+
+/* MessageList */
+
+
+/* NewRoom */
+
+
+
+/* RoomList */
