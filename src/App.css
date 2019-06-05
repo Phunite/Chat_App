@@ -1,56 +1,49 @@
 
 /* App */
 .App {
-  text-align: center;
-  background: coral;
-  height:800px;
+  margin:0px;
+  padding:0px;
 }
 
+.container{
+  padding:1em;
+  display:grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template: 
+  "r r r m m m m m m m m m"
+  "r r r m m m m m m m m m"
+  "r r r m m m m m m m m m"
+  "r r r m m m m m m m m m"
+  "c c c n n n n n n n n n";
+  
+  grid-template-rows: 300px auto 100px;
+}
 
+.messageArea{
+grid-area: m;
+background: rgb(211, 13, 13);
+border-radius: 1em;
+}
+.roomArea{
+  grid-area: r;
+  background: rgb(192, 181, 181);
+  border-radius: 1em;
+}
+.newMessageArea{
+  grid-area: n;
+  background: rgb(85, 170, 45);
+  box-shadow: black;
+}
+.createRoomArea{
+  grid-area: c;
+  background: rgb(226, 223, 231);
+ 
+}
 /* Message */
 /* Chat containers */
 
 
 /* Darker chat container */
-.darker {
-  border-color: #ccc;
-  background-color: #ddd;
-}
-
-/* Clear floats */
-.container::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Style images */
-.container img {
-  float: left;
-  max-width: 60px;
-  width: 100%;
-  margin-right: 20px;
-  border-radius: 50%;
-}
-
-/* Style the right image */
-.container img.right {
-  float: right;
-  margin-left: 20px;
-  margin-right:0;
-}
-
-/* Style time text */
-.time-right {
-  float: right;
-  color: #aaa;
-}
-
-/* Style time text */
-.time-left {
-  float: left;
-  color: #999;
-}
 
 
 /* MessageList */
