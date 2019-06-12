@@ -1,45 +1,96 @@
 
 /* App */
-.App {
+*{
   margin:0px;
   padding:0px;
 }
 
-.container{
-  padding:1em;
+.wrapper{
   display:grid;
-  grid-template-columns: repeat(12,1fr);
-  grid-template: 
-  "r r r m m m m m m m m m"
-  "r r r m m m m m m m m m"
-  "r r r m m m m m m m m m"
-  "r r r m m m m m m m m m"
-  "c c c n n n n n n n n n";
-  
-  grid-template-rows: 300px auto 100px;
-}
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(8,1fr) ;
+  grid-template-areas: 
+  "r r m m m m"
+  "r r m m m m"
+  "r r m m m m"
+  "r r m m m m"
+  "r r m m m m"
+  "r r m m m m"
+  "r r m m m m"
+  "r r m m m m"
+  "r r m m m m"
+  "c c t t t t" ;
+  grid-gap: 5px;
+  background:rgb(255, 255, 255);
+  box-shadow: 0 5px 10px
+  rgba(154,160,185,.5), 0 15px 40px
+  rgba(166,173,201,.2);
+  border-radius: 1em;
+  padding:1em;
+  }
 
 .messageArea{
-grid-area: m;
-background: rgb(211, 13, 13);
-border-radius: 1em;
+  grid-area: m;
+  background:rgb(213, 224, 233);
+  box-shadow: 0 5px 10px
+  rgba(154,160,185,.5), 0 15px 40px
+  rgba(166,173,201,.2);
+  border-top-right-radius:1em;
+  padding:1em;
+  overflow:scroll;;
 }
 .roomArea{
   grid-area: r;
-  background: rgb(192, 181, 181);
-  border-radius: 1em;
+  background:rgb(158, 186, 238);
+  box-shadow: 0 5px 10px
+rgba(154,160,185,.5), 0 15px 40px
+rgba(166,173,201,.2);
+border-top-left-radius:1em;
+padding:1em;
+
 }
 .newMessageArea{
-  grid-area: n;
-  background: rgb(85, 170, 45);
-  box-shadow: black;
+  grid-area: t;
+    background:rgb(219, 216, 216);
+    box-shadow: 0 5px 10px
+  rgba(154,160,185,.5), 0 15px 40px
+  rgba(166,173,201,.2);
+  border-bottom-right-radius:1em;
+  padding:1em;
+
 }
 .createRoomArea{
   grid-area: c;
-  background: rgb(226, 223, 231);
- 
+    background:rgb(172, 168, 168);
+    box-shadow: 0 5px 10px
+  rgba(154,160,185,.5), 0 15px 40px
+  rgba(166,173,201,.2);
+  border-bottom-left-radius:1em;
+  
+  padding:1em;
 }
 /* Message */
+.name{
+  color:black;
+  font-family: 'Courier New', Courier, monospace;
+  margin:0;
+  margin-left:1em;
+
+}
+.msg{
+  background:rgb(0, 132, 255);
+  color:white;
+  border-radius: 1em;
+  height:15%;
+  padding:5px;
+  width: 60%;
+  margin:0;
+
+
+}
+.newMsg{
+  width:100%;
+}
 /* Chat containers */
 
 

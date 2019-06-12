@@ -10,8 +10,6 @@ class RoomList extends Component {
                     <li>Anime</li>
                     <li>Cooking</li>
                 </ul>
-
-
             </div>
             
          );

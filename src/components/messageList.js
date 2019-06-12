@@ -6,6 +6,14 @@ class MessageList extends React.Component {
         return(
         <div>
             <Message></Message>
+            <Message></Message>
+            <Message></Message>
+            <Message></Message>
+            <Message></Message>
+            <Message></Message>
+            <Message></Message>
+            <Message></Message>
+
         </div>
         )
     }

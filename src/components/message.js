@@ -3,9 +3,9 @@ import React from 'react'
 class Message extends React.Component{
     render(){
         return(
-            <div className="container">
-                <p>Hello. How are you today?</p>
-                <span class="time-right">11:00</span>
+            <div className="MessageContainer">
+                <p className="name">Phu69</p>
+                <p className="msg">Hello. How are you today? My name is Phu</p>  
             </div>
         )
     }
