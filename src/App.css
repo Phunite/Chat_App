@@ -1,56 +1,100 @@
 
 /* App */
-.App {
-  text-align: center;
-  background: coral;
-  height:800px;
+*{
+  margin:0px;
+  padding:0px;
 }
 
+.wrapper{
+  display:grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(8,1fr) ;
+  grid-template-areas: 
+  "r r m m m m"
+  "r r m m m m"
+  "r r m m m m"
+  "r r m m m m"
+  "r r m m m m"
+  "r r m m m m"
+  "r r m m m m"
+  "r r m m m m"
+  "r r m m m m"
+  "c c t t t t" ;
+  grid-gap: 5px;
+  background:rgb(255, 255, 255);
+  box-shadow: 0 5px 10px
+  rgba(154,160,185,.5), 0 15px 40px
+  rgba(166,173,201,.2);
+  border-radius: 1em;
+  padding:1em;
+  }
 
+.messageArea{
+  grid-area: m;
+  background:rgb(213, 224, 233);
+  box-shadow: 0 5px 10px
+  rgba(154,160,185,.5), 0 15px 40px
+  rgba(166,173,201,.2);
+  border-top-right-radius:1em;
+  padding:1em;
+  overflow:scroll;;
+}
+.roomArea{
+  grid-area: r;
+  background:rgb(158, 186, 238);
+  box-shadow: 0 5px 10px
+rgba(154,160,185,.5), 0 15px 40px
+rgba(166,173,201,.2);
+border-top-left-radius:1em;
+padding:1em;
+
+}
+.newMessageArea{
+  grid-area: t;
+    background:rgb(219, 216, 216);
+    box-shadow: 0 5px 10px
+  rgba(154,160,185,.5), 0 15px 40px
+  rgba(166,173,201,.2);
+  border-bottom-right-radius:1em;
+  padding:1em;
+
+}
+.createRoomArea{
+  grid-area: c;
+    background:rgb(172, 168, 168);
+    box-shadow: 0 5px 10px
+  rgba(154,160,185,.5), 0 15px 40px
+  rgba(166,173,201,.2);
+  border-bottom-left-radius:1em;
+  
+  padding:1em;
+}
 /* Message */
+.name{
+  color:black;
+  font-family: 'Courier New', Courier, monospace;
+  margin:0;
+  margin-left:1em;
+
+}
+.msg{
+  background:rgb(0, 132, 255);
+  color:white;
+  border-radius: 1em;
+  height:15%;
+  padding:5px;
+  width: 60%;
+  margin:0;
+
+
+}
+.newMsg{
+  width:100%;
+}
 /* Chat containers */
 
 
 /* Darker chat container */
-.darker {
-  border-color: #ccc;
-  background-color: #ddd;
-}
-
-/* Clear floats */
-.container::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Style images */
-.container img {
-  float: left;
-  max-width: 60px;
-  width: 100%;
-  margin-right: 20px;
-  border-radius: 50%;
-}
-
-/* Style the right image */
-.container img.right {
-  float: right;
-  margin-left: 20px;
-  margin-right:0;
-}
-
-/* Style time text */
-.time-right {
-  float: right;
-  color: #aaa;
-}
-
-/* Style time text */
-.time-left {
-  float: left;
-  color: #999;
-}
 
 
 /* MessageList */

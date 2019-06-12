@@ -6,8 +6,7 @@ class NewMessage extends Component {
         <div>
             <div>
                 <form>
-                    <input type="text"></input>
-                    <button>Send</button>
+                    <textarea className="newMsg"type="text" value="Type Your Message and Press enter" ></textarea>
                 </form>
             </div>
         </div>
